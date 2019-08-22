@@ -185,7 +185,7 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(1);
 }
 
 .post-list {
@@ -193,7 +193,8 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    // margin-bottom: $spacing-unit;
+    margin-bottom: 1px;
   }
 }
 
