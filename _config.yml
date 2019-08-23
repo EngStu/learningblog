@@ -17,10 +17,11 @@ title: My Learning Blog
 email: engstu2015@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Notes of my learning journey.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/learningblog" # the subpath of your site, e.g. /blog
+url: "engstu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Indo_Padigon
 github_username:  EngStu
+disqus.shortname: lb2019
 
 # Build settings
 markdown: kramdown
