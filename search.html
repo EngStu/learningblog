@@ -1,0 +1,32 @@
+---
+layout: search
+---
+
+<h1>Search All Posts or Tags</h1>
+
+<!-- search posts -->
+{% raw %}
+<div id="app">
+
+  <div class="search-wrapper">
+    <input class="search" type="text" name="search" v-model="search" placeholder="Search posts or tags...">
+  </div>
+
+  <div class="results-wrapper" style="text-align: left; margin-top: 10px">
+    <div class="post"  v-for="post in filteredPosts">
+      <a class="post-title" style="font-size: 150%" v-bind:href="post.url">{{ post.title }}</a><br>
+      <!-- <small>{{ post.date }}</small> -->
+
+      <!-- <img class="img-small" alt="Cover image" v-bind:src="post.cover" v-if="post.cover"> -->
+
+      <small style="color: green">Tags: {{ post.tags }}</small>
+    </div>
+  </div>
+
+</div>
+
+{% endraw %}
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="/js/posts_data.js"></script>
+<script src="/js/posts.js"></script>
